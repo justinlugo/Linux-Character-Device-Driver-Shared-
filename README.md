@@ -1,2 +1,2 @@
 # Linux-Character-Device-Driver-Shared-
-Splitting my last project into two separate devices that utilize shared memory.
+(Spring 2023)<br>For this program, we were tasked with modifying our device driver in order to make it into two separate kernel modules, one handling writing (input) and the other reading (output), and using shared memory to maintain the connection between the two. This was a little bit of a challenge to get working as it actually broke my virtual machine by causing it to run out of memory by storing null/garbage characters (the buffer would overflow). Eventually got it working by limiting the amount of characters I would test with ( 1024, lowered to 256 for personal testing).
